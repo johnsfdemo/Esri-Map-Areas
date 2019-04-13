@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Property_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>A sample object showing all of the required fields for the items to be drawn on an Esri map using the EsriMapAreas Lightning component.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Acreage__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The acreage of the property.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The acreage of the property.</inlineHelpText>
+        <label>Acreage</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Coordinates__c</fullName>
+        <description>THIS FIELD IS REQUIRED BY THE EsriMapAreas LIGHTNING COMPONENT. It must be a comma-separated list of coordinates of the form [lat1,lon1],[lat2,lon2],...,[latn,lonn].</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Must be a comma-separated list of coordinates of the form [lat1,lon1],[lat2,lon2],...,[latn,lonn].</inlineHelpText>
+        <label>Coordinates</label>
+        <length>100000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Formatted_Tab_URL__c</fullName>
+        <description>THIS FIELD IS REQUIRED BY THE EsriMapAreas LIGHTNING COMPONENT. It should evaluate to a URL path name (without the &quot;https&quot; or server portion, for portability) that will take the user to this record&apos;s page. It is used exclusively by (1) the Lightning data table in the component&apos;s controller to show the property items in a list below the map, and (2) by the base map controller to in the popup that comes up when a user selects an area on the map. It should probably be left off of any page layouts.</description>
+        <externalId>false</externalId>
+        <formula>&quot;/lightning/r/Property__c/&quot; &amp; Id &amp; &quot;/view&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Formatted Tab URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Color__c</fullName>
+        <defaultValue>&quot;red&quot;</defaultValue>
+        <description>THIS FIELD IS REQUIRED BY THE EsriMapAreas LIGHTNING COMPONENT. It is A color description, suitable for a CSS specification, of the polygon to be drawn on the map.  For example, either &quot;#ff0000&quot; or &quot;red&quot;.</description>
+        <externalId>false</externalId>
+        <label>Item Color</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>THIS FIELD IS REQUIRED BY THE EsriMapAreas LIGHTNING COMPONENT, ALTHOUGH IT MAY HAVE ANY NAME OR API NAME AND MAY LOOKUP TO ANY OBJECT. It is required to be entered on the Lightning Builder record page when configuring the component.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The owner of the property.</inlineHelpText>
+        <label>Owner</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Properties</relationshipLabel>
+        <relationshipName>Properties</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Property</label>
+    <nameField>
+        <label>Property Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Properties</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

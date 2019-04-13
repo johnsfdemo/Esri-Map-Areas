@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EsriMapAreas</fullName>
+    <description>Lightning components and associated static resources to display polygon areas on an Esri map.</description>
+    <types>
+        <members>EsriMapAreasController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>EsriBaseMap</members>
+        <members>EsriMapAreas</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Property__c.Acreage__c</members>
+        <members>Property__c.Coordinates__c</members>
+        <members>Property__c.Formatted_Tab_URL__c</members>
+        <members>Property__c.Item_Color__c</members>
+        <members>Property__c.Owner__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Property__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Property_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Property__c-Map Item Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>leaflet_1_4_0</members>
+        <name>StaticResource</name>
+    </types>
+    <version>45.0</version>
+</Package>

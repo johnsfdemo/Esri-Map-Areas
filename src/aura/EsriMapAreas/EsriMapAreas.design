@@ -1,0 +1,16 @@
+<design:component >
+    <design:attribute name="itemObjectAPIName" label="Map Polygon Object API Name" description="The API name of the object that contains the map polygon fields." />
+    <design:attribute name="lookupFieldAPIName" label="Lookup Field API Name" description="The API name of the lookup field on the map polygon object that looks up to the main object." />
+    <design:attribute name="header" label="Title" description="The title (header) that will appear in the component." />
+    <design:attribute name="mapHeight" label="Height of Map Area" description="The height of the map area in pixels. Default is 500." />
+    <design:attribute name="listHeight" label="Maximum Height of List Area" description="The maximum height of the list area in pixels. Default is 200." />
+    <design:attribute name="borderWidth" label="Width of Borders" description="The width of the borders on the items drawn on the map, in pixels. Default is 4." />
+    <design:attribute name="fillOpacity" label="Area Fill Opacity" description="The opacity (between 0 and 1) of the items drawn on the map. 0 is completely transparent, 1 is no transparency. Default is 0.25." />
+    <design:attribute name="sortFieldAPIName" label="Sort Field API Name" description="The API name of the field to sort the list on." />
+    <design:attribute name="sortOrderDescending" label="Sort Descending" description="Check this box to sort in descending order." />
+    <design:attribute name="column2SpecString" label="Second Column Field Specification" description="A &quot;|&quot;-separated triple consisting of a column name, field API name, and a type string compatible with a Lightning datatable column type." />
+    <design:attribute name="column3SpecString" label="Third Column Field Specification" description="A &quot;|&quot;-separated triple consisting of a column name, field API name, and a type string compatible with a Lightning datatable column type." />
+    <design:attribute name="column4SpecString" label="Fourth Column Field Specification" description="A &quot;|&quot;-separated triple consisting of a column name, field API name, and a type string compatible with a Lightning datatable column type." />
+    <design:attribute name="column5SpecString" label="Fifth Column Field Specification" description="A &quot;|&quot;-separated triple consisting of a column name, field API name, and a type string compatible with a Lightning datatable column type." />
+    <design:attribute name="column6SpecString" label="Sixth Column Field Specification" description="A &quot;|&quot;-separated triple consisting of a column name, field API name, and a type string compatible with a Lightning datatable column type." />
+</design:component>

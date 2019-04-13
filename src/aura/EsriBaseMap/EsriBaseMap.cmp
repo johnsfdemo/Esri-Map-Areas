@@ -1,0 +1,24 @@
+<aura:component implements="force:appHostable" access="global">
+    
+    <aura:attribute name="mapHeight" type="Integer" default="500" access="global" />	<!-- The height of the map area -->
+    <aura:attribute name="mapItems" type="List" access="public" />						<!-- The list of map polygons to display -->
+    <aura:attribute name="fieldList" type="List" access="public" />						<!-- Experimental, can't get working with eval() -->
+    <aura:attribute name="borderWidth" type="Integer" access="public" default="4" />
+    <aura:attribute name="fillOpacity" type="Decimal" access="public" default="0.25" />
+    
+    <aura:attribute name="map" type="Object" access="private" />						<!-- Stores the created map object internally -->
+    <aura:attribute name="tileLayer" type="Object" access="private" />					<!-- Stores the created tile layer internally -->
+    <aura:attribute name="polygonList" type="List" access="private" />					<!-- List of polygons indexed by claim ID stored internally -->
+    
+    <aura:method name="redraw" action="{!c.drawSelected}" description="Refreshes the map.">
+        <aura:attribute name="mapItems" type="List" />
+    </aura:method>
+    <aura:method name="setMapType" action="{!c.setMapType}" description="Sets the map type (defaults to topographical).">
+        <aura:attribute name="mapType" type="String" />
+    </aura:method>
+    
+    <ltng:require styles="{!$Resource.leaflet_1_4_0 + '/leaflet.css'}" scripts="{!$Resource.leaflet_1_4_0 + '/leaflet.js'}" afterScriptsLoaded="{!c.doInit}" />
+    
+    <div aura:id="mapDiv" style="{!'height:' + v.mapHeight + 'px;'}" />
+    
+</aura:component>
