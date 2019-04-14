@@ -65,8 +65,7 @@ Simply click the button below and log into your org:
 - All about [Esri](https://www.esri.com).
 - [ArcGIS REST Services](https://server.arcgisonline.com/arcgis/rest/services).
 - I use the wonderful [Leaflet JavaScript library](https://leafletjs.com/) for all of the mapping magic.
-- Generate map coordinates with the [Google Maps and KML shapes generator](https://www.doogal.co.uk/polylines.php). Click the "CSV" tab to get coordinates suitable for use with **Esri Map Areas**.
-
+- Generate map coordinates with the [Google Maps and KML shapes generator](https://www.doogal.co.uk/polylines.php). Click the "CSV" tab to get coordinates suitable for use with this component.
 
 ## Credits
 
