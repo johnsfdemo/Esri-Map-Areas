@@ -7,7 +7,7 @@ This package contains a Lightning component that draws polygons read from a Sale
 
 ## Configuration
 
-The component pulls coordinates from records in a related list. The related list object can be any Salesforce object, but must contain the following fields:
+The component pulls coordinates from records in a related list. The related list object can be any Salesforce object, but must contain the following custom fields:
 
 Field API Name | Description
 -------------- | -----------
@@ -15,7 +15,24 @@ Field API Name | Description
 `Coordinates__c` | A comma-separated list of two-member latitude/longitude arrays in JSON format that represent the polygon to be drawn on the map: `[lat-1,lon-1],[lat-2,lon-2],...[lat-n,lon-n]`
 `Formatted_Tab_URL__c` | A string that should evaluate to a URL path name (without the "https" or server portion, for portability) that will take the user to this record's page. I use a formula field to generate this based on the object API name and ID field.
 
-The package contains a sample object called `Property__c` which contains all of the required fields. You either use it as a reference or as a starting point for your own custom object.
+The package contains a sample object called `Property__c` which contains all of the required fields. You can either use it as a reference or as a starting point for your own custom object.
+
+From here, you can simply drag the component onto a Lightning App Builder page:
+![Lightning App Builder Page](/images/Esri-Maps-Area-Configuration.png)
+
+Most of the properties of the component default to reasonable values, but you must supply two:
+
+- The API name of the related list object that contains the required fields described above.
+- The API name of the lookup field on the related list object that looks up to this object.
+
+You may also specify up to five additional fields to be displayed on the related list from the custom object you specify. The strings in the components properties must be a "|"-separated triple consisting of
+
+- The column header for the field you would like to show.
+- The API name of the field on the related object for that column.
+- A type string that conforms to the `type` property of the [Lightning datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning:datatable/documentation) specification; for example, `number`, `text`, `date`, etc.
+
+You may specify an optional sorting of the related list based on any field in the related list object and you may choose to sort in either ascending or descending order.
+
 
 ## How to Deploy This Package to Your Org
 
