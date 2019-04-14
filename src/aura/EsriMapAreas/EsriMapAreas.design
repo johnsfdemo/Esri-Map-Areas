@@ -4,7 +4,7 @@
     <design:attribute name="header" label="Title" description="The title (header) that will appear in the component." />
     <design:attribute name="mapHeight" label="Height of Map Area" description="The height of the map area in pixels. Default is 500." />
     <design:attribute name="listHeight" label="Maximum Height of List Area" description="The maximum height of the list area in pixels. Default is 200." />
-    <design:attribute name="borderWidth" label="Width of Borders" description="The width of the borders on the items drawn on the map, in pixels. Default is 4." />
+    <design:attribute name="borderWidth" label="Border Width" description="The width of the borders on the items drawn on the map, in pixels. Default is 4." />
     <design:attribute name="fillOpacity" label="Area Fill Opacity" description="The opacity (between 0 and 1) of the items drawn on the map. 0 is completely transparent, 1 is no transparency. Default is 0.25." />
     <design:attribute name="sortFieldAPIName" label="Sort Field API Name" description="The API name of the field to sort the list on." />
     <design:attribute name="sortOrderDescending" label="Sort Descending" description="Check this box to sort in descending order." />

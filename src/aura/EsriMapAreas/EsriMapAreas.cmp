@@ -3,7 +3,7 @@
     <!-- Design parameters -->    
     <aura:attribute name="itemObjectAPIName" type="String" access="global" default="Property__c" required="true" />
     <aura:attribute name="lookupFieldAPIName" type="String" access="global" default="Owner__c" required="true" />
-    <aura:attribute name="header" type="String" access="global" />
+    <aura:attribute name="header" type="String" access="global" default="Map" />
     <aura:attribute name="mapHeight" type="Integer" default="500" access="global" />
     <aura:attribute name="listHeight" type="Integer" default="200" access="global" />
     <aura:attribute name="borderWidth" type="Integer" access="global" default="4" />
@@ -21,20 +21,15 @@
     <aura:attribute name="selectedItems" type="List" access="private" />					<!-- List of selected items, used to disable the reset button and the map type menu list -->
     <aura:attribute name="selectedRows" type="Id[]" access="private" />						<!-- List of selected rows for the Lightning Datatable -->
     <aura:attribute name="columns" type="List" access="private" />							<!-- Column descriptions for the Lightning Datatable -->
-    <aura:attribute name="title" type="Aura.Component[]" access="private">
-        <aura:if isTrue="{!empty(v.header)}">
-            <h2><b>Map</b></h2>
-            <aura:set attribute="else">
-                <h2><b>{!v.header}</b></h2>
-            </aura:set>
-        </aura:if>
+    <aura:attribute name="headerTitle" type="Aura.Component[]" access="private">
+        <h2><b>{!v.header}</b></h2>
     </aura:attribute>
     <aura:attribute name="fieldList" type="List" access="private" />
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     
     <aura:if isTrue="{!not(empty(v.mapItems))}">    
-        <lightning:card title="{!v.title}" variant="base" iconName="custom:custom78" class="slds-p-horizontal--small">
+        <lightning:card title="{!v.headerTitle}" variant="base" iconName="custom:custom78" class="slds-p-horizontal--small">
             <aura:set attribute="actions">
                 <lightning:layout horizontalAlign="end">
                     <lightning:layoutItem padding="horizontal-medium">
