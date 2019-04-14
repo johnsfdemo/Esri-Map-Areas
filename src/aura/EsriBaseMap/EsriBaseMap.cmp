@@ -19,6 +19,6 @@
     
     <ltng:require styles="{!$Resource.leaflet_1_4_0 + '/leaflet.css'}" scripts="{!$Resource.leaflet_1_4_0 + '/leaflet.js'}" afterScriptsLoaded="{!c.doInit}" />
     
-    <div aura:id="mapDiv" style="{!'height:' + v.mapHeight + 'px;'}" />
+    <div aura:id="mapDiv" style="{!'height:' + v.mapHeight + 'px;z-index:0;'}" />
     
 </aura:component>
