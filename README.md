@@ -1,6 +1,6 @@
 # Esri Map Areas
 
-This package contains a Lightning component that draws polygons read from a Salesforce related list onto a map embedded in a record page. The component allows the user to choose between street, topological, and satellite views of the map.
+This package contains a Lightning component that draws polygons read from a Salesforce related list onto an [Esri](https://www.esri.com) map embedded in a record page. The component allows the user to choose between street, topological, and satellite views of the map.
 
 ![EsriMapAreas in Action](/images/EsriMapAreas-Animated.gif)
 
@@ -21,7 +21,7 @@ The package includes a sample object called `Property__c` which contains all of 
 
 From here, you can simply drag the component onto a Lightning App Builder page:
 
-![Lightning App Builder Page](/images/Esri-Maps-Area-Configuration.png)
+![Lightning App Builder Page](/images/Esri-Map-Areas-Configuration.png)
 
 Most of the properties of the component default to reasonable values, but you must supply two:
 
