@@ -1,6 +1,6 @@
 # Esri Map Areas
 
-
+![EsriMapAreas in Action](/images/EsriMapAreas-Animated.gif)
 
 ## How to Deploy This Package to Your Org
 
