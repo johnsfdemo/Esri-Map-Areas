@@ -83,6 +83,16 @@
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
+        <fullName>Date_Purchased__c</fullName>
+        <description>The date the property was purchased.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the property was purchased.</inlineHelpText>
+        <label>Date Purchased</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Formatted_Tab_URL__c</fullName>
         <description>THIS FIELD IS REQUIRED BY THE EsriMapAreas LIGHTNING COMPONENT. It should evaluate to a URL path name (without the &quot;https&quot; or server portion, for portability) that will take the user to this record&apos;s page. It is used exclusively by (1) the Lightning data table in the component&apos;s controller to show the property items in a list below the map, and (2) by the base map controller to in the popup that comes up when a user selects an area on the map. It should probably be left off of any page layouts.</description>
         <externalId>false</externalId>
@@ -107,12 +117,12 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Owner__c</fullName>
+        <fullName>Property_Owner__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>THIS FIELD IS REQUIRED BY THE EsriMapAreas LIGHTNING COMPONENT, ALTHOUGH IT MAY HAVE ANY NAME OR API NAME AND MAY LOOKUP TO ANY OBJECT. It is required to be entered on the Lightning Builder record page when configuring the component.</description>
         <externalId>false</externalId>
         <inlineHelpText>The owner of the property.</inlineHelpText>
-        <label>Owner</label>
+        <label>Property Owner</label>
         <referenceTo>Contact</referenceTo>
         <relationshipLabel>Properties</relationshipLabel>
         <relationshipName>Properties</relationshipName>

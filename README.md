@@ -28,11 +28,22 @@ Most of the properties of the component default to reasonable values, but you mu
 - The API name of the related list object that contains the required fields described above.
 - The API name of the lookup field on the related list object that looks up to this object.
 
-You may also specify up to five additional fields to be displayed on the related list from the custom object you specify. The strings in the components properties must be a "|"-separated triple consisting of
+You may also specify up to nine additional fields to be displayed on the related list from the custom object you specify. The strings in the components properties must be a "|"-separated sequence consisting of
 
-- The column header for the field you would like to show.
-- The API name of the field on the related object for that column.
-- A type string that conforms to the `type` property of the [Lightning datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning:datatable/documentation) specification; for example, `number`, `text`, `date`, etc.
+- (*Required*) The column header for the field you would like to show.
+- (*Required*) The API name of the field on the related object for that column.
+- (*Required*) A type string that identifies a `type` property of the [Lightning datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning:datatable/documentation) specification; for example, `number`, `text`, `date`, etc.
+- An optional JSON string that contains `cellAttributes` for the column in a form consistent with the [Lightning datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning:datatable/documentation) specification.
+- An optional JSON string that contains `typeAttributes` for the column in a form consistent with the [Lightning datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning:datatable/documentation) specification.
+
+For example, the string for the purchase date column for the properties example above is:
+```
+Date Purchased|Date_Purchased__c|date|"alignment":"center"|"day":"numeric","month":"long","year":"numeric"
+```
+and the string for the acreage column is:
+```
+Acreage|Acreage__c|number|"alignment":"center"||
+```
 
 You can optionally sort the related list based on any field in the related list object in either ascending or descending order.
 

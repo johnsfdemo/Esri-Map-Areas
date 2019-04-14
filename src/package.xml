@@ -14,9 +14,10 @@
     <types>
         <members>Property__c.Acreage__c</members>
         <members>Property__c.Coordinates__c</members>
+        <members>Property__c.Date_Purchased__c</members>
         <members>Property__c.Formatted_Tab_URL__c</members>
         <members>Property__c.Item_Color__c</members>
-        <members>Property__c.Owner__c</members>
+        <members>Property__c.Property_Owner__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -28,7 +29,7 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Property__c-Map Item Layout</members>
+        <members>Property__c-Property Layout</members>
         <name>Layout</name>
     </types>
     <types>

@@ -7,8 +7,14 @@
         for (let specString = 2; specString <= 6; specString++) {
             let string = component.get("v.column" + specString + "SpecString");
             if (string != null && string != "") {
-                let specArray = string.split('|', 3);
-                columns.push({ label: specArray[0], fieldName: specArray[1], type: specArray[2] });
+                let specArray = string.split('|', 5);
+                columns.push({
+                    label: specArray[0],
+                    fieldName: specArray[1],
+                    type: specArray[2],
+                    cellAttributes: JSON.parse('{ ' + specArray[3] + ' }'),
+                    typeAttributes: JSON.parse('{' + specArray[4] + '}')
+                });
                 queryFields += ", " + specArray[1];
                 fieldList.push({ label: specArray[0], fieldName: specArray[1] });	// Experimental, not implemented
             }

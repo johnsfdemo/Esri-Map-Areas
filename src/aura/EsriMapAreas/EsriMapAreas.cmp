@@ -15,6 +15,10 @@
     <aura:attribute name="column4SpecString" type="String" access="global" />
     <aura:attribute name="column5SpecString" type="String" access="global" />
     <aura:attribute name="column6SpecString" type="String" access="global" />
+    <aura:attribute name="column7SpecString" type="String" access="global" />
+    <aura:attribute name="column8SpecString" type="String" access="global" />
+    <aura:attribute name="column9SpecString" type="String" access="global" />
+    <aura:attribute name="column10SpecString" type="String" access="global" />
     
     <!-- Internal variables -->    
     <aura:attribute name="mapItems" type="List" access="private" />							<!-- List of items belonging to the record -->
