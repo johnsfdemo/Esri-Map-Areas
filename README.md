@@ -34,7 +34,7 @@ You may also specify up to five additional fields to be displayed on the related
 - The API name of the field on the related object for that column.
 - A type string that conforms to the `type` property of the [Lightning datatable](https://developer.salesforce.com/docs/component-library/bundle/lightning:datatable/documentation) specification; for example, `number`, `text`, `date`, etc.
 
-You may specify an optional sorting of the related list based on any field in the related list object and you may choose to sort in either ascending or descending order.
+You can optionally sort the related list based on any field in the related list object in either ascending or descending order.
 
 
 ## How to Deploy This Package to Your Org
