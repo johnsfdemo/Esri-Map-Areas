@@ -23,12 +23,12 @@ From here, you can simply drag the component onto a Lightning App Builder page:
 
 ![Lightning App Builder Page](/images/Esri-Map-Areas-Configuration.png)
 
-Most of the properties of the component default to reasonable values, but you must supply two:
+Most of the properties of the component default to reasonable values, but you must supply these two:
 
 - The API name of the related list object that contains the required fields described above.
 - The API name of the lookup field on the related list object that looks up to this object.
 
-You may also specify up to nine additional fields to be displayed on the related list from the custom object you specify. The strings in the components properties must be a "|"-separated sequence consisting of
+You may also specify up to nine additional fields to be displayed on the related list from the related list object. The strings in the component properties must be a "|"-separated sequence consisting of
 
 - (*Required*) The column header for the field you would like to show.
 - (*Required*) The API name of the field on the related object for that column.
