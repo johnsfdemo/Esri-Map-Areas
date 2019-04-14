@@ -15,7 +15,7 @@ Field API Name | Description
 `Coordinates__c` | A comma-separated list of two-member latitude/longitude arrays in JSON format that represent the polygon to be drawn on the map: `[lat-1,lon-1],[lat-2,lon-2],...[lat-n,lon-n]`
 `Formatted_Tab_URL__c` | A string that should evaluate to a URL path name (without the "https" or server portion, for portability) that will take the user to this record's page. I use a formula field to generate this based on the object API name and ID field: `"/lightning/r/Property__c/" & Id & "/view"`
 
-The package contains a sample object called `Property__c` which contains all of the required fields. You can either use it as a reference or as a starting point for your own custom object (or even delete it altogether; it is not required by any other part of the package):
+The package includes a sample object called `Property__c` which contains all of the required fields. You can either use it as a reference or as a starting point for your own custom object (or even delete it altogether; it is not required by any other part of the package):
 
 ![Sample Related List Object](/images/Sample-Related-List.png)
 
